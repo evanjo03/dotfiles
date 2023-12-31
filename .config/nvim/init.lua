@@ -1,2 +1,2 @@
-require("evanjo03.core")
-require("evanjo03.lazy")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
