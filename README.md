@@ -2,9 +2,14 @@
 
 This directory contains the dotfiles for my system managed with GNU stow.
 
+## Requirements
+
+1. Install git
+2. Install GNU stow
+
 ## Installation
 
-1. Clone the repository.
+1. Clone the repository to $HOME.
 
 ```
 $ git clone https://github.com/evanjo03/dotfiles.git
