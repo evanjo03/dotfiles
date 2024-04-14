@@ -126,9 +126,9 @@ return {
     opts = {
       -- colorscheme = "onedark",
       -- colorscheme = "nightfly",
-      colorscheme = "vscode",
+      -- colorscheme = "vscode",
       -- colorscheme = "nightfox",
-      -- colorscheme = "kanagawa",
+      colorscheme = "kanagawa",
       -- colorscheme = "arctic",
       -- colorscheme = "catppuccin",
       -- colorscheme = "night-owl",
