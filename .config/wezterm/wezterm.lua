@@ -18,9 +18,9 @@ end
 -- config.color_scheme = "Tokyo Night (Gogh)"
 -- config.color_scheme = "Vs Code Dark+ (Gogh)"
 -- config.color_scheme = "nightfox"
-config.color_scheme = "Kanagawa (Gogh)"
+-- config.color_scheme = "Kanagawa (Gogh)"
 -- config.color_scheme = "Catppuccin Frappé (Gogh)"
--- config.color_scheme = "Catppuccin Macchiato (Gogh)"
+config.color_scheme = "Catppuccin Macchiato (Gogh)"
 -- config.color_scheme = "Catppuccin Mocha"
 -- config.color_scheme = "Night Owl (Gogh)"
 
@@ -28,8 +28,8 @@ config.color_scheme = "Kanagawa (Gogh)"
 -- config.font = wezterm.font("MesloLGS Nerd Font")
 -- config.font = wezterm.font("Hack Nerd Font")
 
-config.font = wezterm.font("JetBrainsMono Nerd Font")
--- config.font = wezterm.font("FiraCode Nerd Font")
+-- config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("FiraCode Nerd Font")
 -- config.font = wezterm.font("FiraMono Nerd Font")
 --
 config.font_size = 16
