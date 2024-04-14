@@ -64,6 +64,13 @@ return {
     name = "onedark",
   },
   {
+    "rockyzhang24/arctic.nvim",
+    name = "arctic",
+    dependencies = { "rktjmp/lush.nvim" },
+    priority = 1000,
+    branch = "main",
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
@@ -119,10 +126,11 @@ return {
     opts = {
       -- colorscheme = "onedark",
       -- colorscheme = "nightfly",
-      -- colorscheme = "vscode",
+      colorscheme = "vscode",
       -- colorscheme = "nightfox",
       -- colorscheme = "kanagawa",
-      colorscheme = "catppuccin",
+      -- colorscheme = "arctic",
+      -- colorscheme = "catppuccin",
       -- colorscheme = "night-owl",
       -- colorscheme = "tokyonight",
       -- colorscheme = "solarized-osaka",
