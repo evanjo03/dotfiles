@@ -20,7 +20,7 @@ $ cd dotfiles
 
 ```
 $ mv $HOME/.config $HOME/.config.bak
-$ mv $HOME/.tmux.conf $HOME/.tmux.conf
+$ mv $HOME/.tmux.conf $HOME/.tmux.conf.bak
 ```
 
 3. Use stow to install the dotfiles.
@@ -29,4 +29,3 @@ $ mv $HOME/.tmux.conf $HOME/.tmux.conf
 $ stow .
 ```
 
-## TODO: Merge with `stow --adopt`
