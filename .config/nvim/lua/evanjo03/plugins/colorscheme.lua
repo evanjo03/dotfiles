@@ -60,4 +60,9 @@ return {
       style = 'darker',
     },
   },
+  {
+    'rebelot/kanagawa.nvim',
+    lazy = true,
+    name = 'kanagawa',
+  },
 }

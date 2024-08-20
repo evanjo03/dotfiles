@@ -13,12 +13,12 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "One Dark (Gogh)"
+-- config.color_scheme = "One Dark (Gogh)"
 -- config.color_scheme = "Nightfly (Gogh)"
 -- config.color_scheme = "Tokyo Night (Gogh)"
 -- config.color_scheme = "Vs Code Dark+ (Gogh)"
 -- config.color_scheme = "nightfox"
--- config.color_scheme = "Kanagawa (Gogh)"
+config.color_scheme = "Kanagawa (Gogh)"
 -- config.color_scheme = "Catppuccin Frappé (Gogh)"
 -- config.color_scheme = "Catppuccin Macchiato (Gogh)"
 -- config.color_scheme = "Catppuccin Mocha (Gogh)"
