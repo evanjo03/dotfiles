@@ -12,28 +12,32 @@
 -- Then, because we use the `config` key, the configuration only runs
 -- after the plugin has been loaded:
 --  config = function() ... end
-return {                -- Useful plugin to show you pending keybinds.
-    'folke/which-key.nvim',
-    event = 'VeryLazy', -- Sets the loading event to 'VimEnter'
-    opts = {
-        spec = {
-            mode = { "n", "v" },
-            { "<leader>l", group = "[L]azyGit" },
-            { "<leader>d", group = "[D]ocument" },
-            { "<leader>r", group = "[R]ename" },
-            { "<leader>s", group = "[S]earch" },
-            { "<leader>w", group = "[W]orkspace" },
-            { "<leader>t", group = "[T]oggle" },
-            { "<leader>h", group = "Git [H]unk" },
-        }
-    },
-    keys = {
-        {
-            "<leader>?",
-            function()
-                require("which-key").show({ global = false })
-            end,
-            desc = "Buffer Local Keymaps (which-key)",
-        },
-    },
+return { -- Useful plugin to show you pending keybinds.
+  'folke/which-key.nvim',
+  event = 'VeryLazy', -- Sets the loading event to 'VimEnter'
+  init = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 500
+  end,
+  opts = {
+    -- spec = {
+    --     mode = { "n", "v" },
+    --     { "<leader>l", group = "[L]azyGit" },
+    --     { "<leader>d", group = "[D]ocument" },
+    --     { "<leader>r", group = "[R]ename" },
+    --     { "<leader>s", group = "[S]earch" },
+    --     { "<leader>w", group = "[W]orkspace" },
+    --     { "<leader>t", group = "[T]oggle" },
+    --     { "<leader>h", group = "Git [H]unk" },
+    -- }
+  },
+  -- keys = {
+  --     {
+  --         "<leader>?",
+  --         function()
+  --             require("which-key").show({ global = false })
+  --         end,
+  --         desc = "Buffer Local Keymaps (which-key)",
+  --     },
+  -- },
 }

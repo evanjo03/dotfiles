@@ -3,10 +3,8 @@
 --  For more options, you can see `:help option-list`
 local opt = vim.opt
 
--- Make line numbers default
+-- Show line numbers default
 opt.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
 opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
@@ -59,9 +57,6 @@ opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 opt.scrolloff = 10
 
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
-
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 opt.hlsearch = true
 
@@ -71,5 +66,5 @@ opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
--- linewidth
--- opt.textwidth = 80
+-- turn off swapfile
+opt.swapfile = false

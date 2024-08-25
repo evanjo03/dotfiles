@@ -9,6 +9,7 @@ return {
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
   },
+  enabled = false,
   cmd = 'Neotree',
   deactivate = function()
     -- stolen from lazy
