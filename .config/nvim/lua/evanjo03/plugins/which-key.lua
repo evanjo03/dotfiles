@@ -15,10 +15,10 @@
 return { -- Useful plugin to show you pending keybinds.
   'folke/which-key.nvim',
   event = 'VeryLazy', -- Sets the loading event to 'VimEnter'
-  init = function()
-    vim.o.timeout = true
-    vim.o.timeoutlen = 500
-  end,
+  -- init = function()
+  --   vim.o.timeout = true
+  --   vim.o.timeoutlen = 500
+  -- end,
   opts = {
     spec = {
       mode = { 'n', 'v' },
@@ -27,8 +27,8 @@ return { -- Useful plugin to show you pending keybinds.
       { '<leader>r', group = 'Rename' },
       { '<leader>s', group = 'Splits' },
       { '<leader>w', group = 'Workspace' },
-      { '<leader>t', group = '[T]oggle' },
-      { '<leader>h', group = 'Git [H]unk' },
+      { '<leader>t', group = 'Tabs' },
+      { '<leader>h', group = 'Git Hunk' },
     },
   },
   -- keys = {
