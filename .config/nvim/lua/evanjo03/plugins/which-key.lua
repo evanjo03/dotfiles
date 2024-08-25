@@ -20,16 +20,16 @@ return { -- Useful plugin to show you pending keybinds.
     vim.o.timeoutlen = 500
   end,
   opts = {
-    -- spec = {
-    --     mode = { "n", "v" },
-    --     { "<leader>l", group = "[L]azyGit" },
-    --     { "<leader>d", group = "[D]ocument" },
-    --     { "<leader>r", group = "[R]ename" },
-    --     { "<leader>s", group = "[S]earch" },
-    --     { "<leader>w", group = "[W]orkspace" },
-    --     { "<leader>t", group = "[T]oggle" },
-    --     { "<leader>h", group = "Git [H]unk" },
-    -- }
+    spec = {
+      mode = { 'n', 'v' },
+      { '<leader>g', group = 'Git' },
+      { '<leader>d', group = 'Document' },
+      { '<leader>r', group = 'Rename' },
+      { '<leader>s', group = 'Splits' },
+      { '<leader>w', group = 'Workspace' },
+      { '<leader>t', group = '[T]oggle' },
+      { '<leader>h', group = 'Git [H]unk' },
+    },
   },
   -- keys = {
   --     {
