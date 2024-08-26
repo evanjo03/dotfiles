@@ -167,10 +167,6 @@ return { -- LSP Configuration & Plugins
       --
       -- But for many setups, the LSP (`tsserver`) will work just fine
       tsserver = {},
-      vtsls = {
-        filetypes = {}, -- No default filetypes
-      },
-
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},
