@@ -68,3 +68,6 @@ opt.autoindent = true -- copy indent from current line when starting new one
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- set concealleve
+opt.conceallevel = 2
