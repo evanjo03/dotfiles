@@ -15,10 +15,10 @@
 return { -- Useful plugin to show you pending keybinds.
   'folke/which-key.nvim',
   event = 'VeryLazy', -- Sets the loading event to 'VimEnter'
-  -- init = function()
-  --   vim.o.timeout = true
-  --   vim.o.timeoutlen = 500
-  -- end,
+  init = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 5
+  end,
   opts = {
     spec = {
       mode = { 'n', 'v' },

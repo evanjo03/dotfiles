@@ -13,7 +13,7 @@ return {
     lazy = true,
     name = 'catppuccin',
     opts = {
-      flavour = '',
+      flavour = 'mocha',
       transparent_background = true,
       integrations = {
         aerial = true,
