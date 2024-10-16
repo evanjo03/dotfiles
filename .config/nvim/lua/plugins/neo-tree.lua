@@ -1,5 +1,11 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
+  keys = {
+    -- Swapped from defaults
+    { "<leader>e", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
+    { "<leader>E", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
+  },
+  enabled = false,
   opts = {
     filesystem = {
       filtered_items = {

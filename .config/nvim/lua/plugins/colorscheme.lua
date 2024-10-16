@@ -4,6 +4,7 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
+      transparent_background = true, -- disables setting the background color.
       flavour = "frappe",
       integrations = {
         aerial = true,
@@ -43,7 +44,7 @@ return {
       },
     },
   },
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
