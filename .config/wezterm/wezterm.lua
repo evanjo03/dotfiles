@@ -10,6 +10,8 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+-- config.default_prog = { "/bin/zsh", "-c", "/opt/homebrew/bin/tmux attach-session -t notes || /opt/homebrew/bin/tmux" }
+
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
