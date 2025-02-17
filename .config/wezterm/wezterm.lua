@@ -25,7 +25,6 @@ config.color_scheme = "Catppuccin Frappé (Gogh)"
 -- config.color_scheme = "Catppuccin Macchiato (Gogh)"
 -- config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Night Owl (Gogh)"
-
 -- Change the font
 -- config.font = wezterm.font("MesloLGS Nerd Font")
 -- config.font = wezterm.font("Hack Nerd Font")
@@ -38,6 +37,7 @@ config.font_size = 16
 
 config.hide_tab_bar_if_only_one_tab = true
 
+config.max_fps = 120
 -- Change the bg opacity:
 -- config.window_background_opacity = 0.80
 -- config.window_decorations = "RESIZE"
