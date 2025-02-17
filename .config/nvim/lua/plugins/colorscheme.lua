@@ -44,6 +44,11 @@ return {
       },
     },
   },
+  {
+    "shaunsingh/nord.nvim",
+    lazy = true,
+    name = "nord",
+  },
   -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
