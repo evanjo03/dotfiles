@@ -8,7 +8,7 @@
 // command palette
 {
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
@@ -24,6 +24,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato"
+    "dark": "VScode Dark Plus"
   }
 }
