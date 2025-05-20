@@ -4,6 +4,7 @@ require 'config.autocommands'
 require 'config.lazy'
 
 require 'lazy'.setup({
+  { import = 'plugins.lsp' },
   { import = 'plugins' },
 }, {
   ui = {
