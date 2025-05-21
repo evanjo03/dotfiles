@@ -28,17 +28,16 @@ return {
 				-- Jump to the definition of the word under your cursor.
 				--  This is where a variable was first declared, or where a function is defined, etc.
 				--  To jump back, press <C-t>.
-				map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
+				map("gd", require("telescope.builtin").lsp_definitions, "Go to Definition")
 
 				-- Find references for the word under your cursor.
-				map("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
+				map("gr", require("telescope.builtin").lsp_references, "Go to References")
 
 				-- Jump to the implementation of the word under your cursor.
 				--  Useful when your language has ways of declaring types without an actual implementation.
-				map("gI", require("telescope.builtin").lsp_implementations, "[G]oto [I]mplementation")
+				map("gI", require("telescope.builtin").lsp_implementations, "Go to Implementation")
 
-				map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
-				map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+				map("gD", vim.lsp.buf.declaration, "Go to Declaration")
 
 				local wk = require("which-key")
 				wk.add({
@@ -46,6 +45,8 @@ return {
 					{ "<leader>lr", vim.lsp.buf.rename, desc = "Rename" },
 					{ "<leader>lt", require("telescope.builtin").lsp_type_definitions, desc = "Type Definition" },
 					{ "<leader>ld", require("telescope.builtin").lsp_document_symbols, desc = "Document Symbols" },
+					{ "<leader>ca", vim.lsp.buf.code_action, desc = "Code Action" },
+					{ "<leader>cd", vim.diagnostic.open_float, desc = "Line Diagnostics" },
 					{
 						"<leader>lw",
 						require("telescope.builtin").lsp_dynamic_workspace_symbols,
@@ -111,12 +112,18 @@ return {
 			end,
 		})
 
-		-- Diagnostic Config
-		-- See :help vim.diagnostic.Opts
 		vim.diagnostic.config({
+			underline = true,
+			update_in_insert = false,
+			virtual_text = {
+				spacing = 4,
+				source = "if_many",
+				prefix = "●",
+				-- this will set set the prefix to a function that returns the diagnostics icon based on the severity
+				-- this only works on a recent 0.10.0 build. Will be set to "●" when not supported
+				-- prefix = "icons",
+			},
 			severity_sort = true,
-			float = { border = "rounded", source = "if_many" },
-			underline = { severity = vim.diagnostic.severity.ERROR },
 			signs = vim.g.have_nerd_font and {
 				text = {
 					[vim.diagnostic.severity.ERROR] = "󰅚 ",
@@ -125,19 +132,6 @@ return {
 					[vim.diagnostic.severity.HINT] = "󰌶 ",
 				},
 			} or {},
-			virtual_text = {
-				source = "if_many",
-				spacing = 2,
-				format = function(diagnostic)
-					local diagnostic_message = {
-						[vim.diagnostic.severity.ERROR] = diagnostic.message,
-						[vim.diagnostic.severity.WARN] = diagnostic.message,
-						[vim.diagnostic.severity.INFO] = diagnostic.message,
-						[vim.diagnostic.severity.HINT] = diagnostic.message,
-					}
-					return diagnostic_message[diagnostic.severity]
-				end,
-			},
 		})
 
 		-- LSP servers and clients are able to communicate to each other what features they support.
