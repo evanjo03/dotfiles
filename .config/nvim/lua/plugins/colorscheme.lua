@@ -27,11 +27,35 @@
 -- 		vim.cmd.colorscheme("arctic")
 -- 	end,
 -- }
+-- return {
+-- 	"EdenEast/nightfox.nvim",
+-- 	name = "nightfox",
+-- 	priority = 1000,
+-- 	config = function()
+-- 		vim.cmd.colorscheme("nordfox")
+-- 	end,
+-- }
+-- return {
+-- 	"shaunsingh/nord.nvim",
+-- 	name = "nord",
+-- 	priority = 1000,
+-- 	config = function()
+-- 		vim.cmd.colorscheme("nord")
+-- 	end,
+-- }
+-- return {
+-- 	"oxfist/night-owl.nvim",
+-- 	name = "night-owl",
+-- 	priority = 1000,
+-- 	config = function()
+-- 		vim.cmd.colorscheme("night-owl")
+-- 	end,
+-- }
 return {
-	"EdenEast/nightfox.nvim",
-	name = "nightfox",
+	"Mofiqul/vscode.nvim",
+	name = "vscode",
 	priority = 1000,
 	config = function()
-		vim.cmd.colorscheme("nordfox")
+		vim.cmd.colorscheme("vscode")
 	end,
 }

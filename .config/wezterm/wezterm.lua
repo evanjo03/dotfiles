@@ -11,9 +11,10 @@ end
 -- color scheme
 -- config.color_scheme = "Kanagawa (Gogh)"
 -- config.color_scheme = "Catppuccin Frappé (Gogh)"
--- config.color_scheme = "Vs Code Dark+ (Gogh)"
-config.color_scheme = "nordfox"
+config.color_scheme = "Vs Code Dark+ (Gogh)"
+-- config.color_scheme = "nordfox"
 -- config.color_scheme = "terafox"
+-- config.color_scheme = "Night Owl (Gogh)"
 
 -- Change the font
 config.font = wezterm.font("JetBrainsMono Nerd Font")
