@@ -18,8 +18,8 @@ return {
 	config = function()
 		local wk = require("which-key")
 		wk.add({
-			{ "<leader>c", group = "Code" },
-			{ "<leader>a", group = "AI" },
+			{ "<leader>c", group = "Code", mode = { "n", "v" } },
+			{ "<leader>a", group = "AI", mode = { "n", "v" } },
 			{ "<leader>x", group = "Diagnostics" },
 		})
 	end,
