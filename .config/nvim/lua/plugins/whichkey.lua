@@ -19,6 +19,8 @@ return {
 		local wk = require("which-key")
 		wk.add({
 			{ "<leader>c", group = "Code" },
+			{ "<leader>a", group = "AI" },
+			{ "<leader>x", group = "Diagnostics" },
 		})
 	end,
 }
