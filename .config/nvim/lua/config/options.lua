@@ -22,3 +22,6 @@ opt.shiftwidth = 4 -- Number of spaces inserted when indenting
 
 -- smooth scroll
 opt.smoothscroll = true
+
+-- Disable swap files
+opt.swapfile = false
