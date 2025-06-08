@@ -5,6 +5,5 @@ return {
 	---@type render.md.UserConfig
 	opts = {
 		sign = { enabled = false },
-		heading = { border = true, border_virtual = true },
 	},
 }
