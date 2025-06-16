@@ -1,1 +1,1 @@
-return { "github/copilot.vim", lazy = false, enabled = false }
+return { "github/copilot.vim", lazy = false }

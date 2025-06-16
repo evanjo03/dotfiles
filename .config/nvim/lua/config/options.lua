@@ -15,11 +15,10 @@ opt.cursorline = true
 opt.confirm = true
 
 -- Tab sizes
-local tab_size = 2
-opt.tabstop = tab_size -- A TAB character looks like 4 spaces
+opt.tabstop = 4 -- A TAB character looks like 4 spaces
 opt.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
-opt.softtabstop = tab_size -- Number of spaces inserted instead of a TAB character
-opt.shiftwidth = tab_size -- Number of spaces inserted when indenting
+opt.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
+opt.shiftwidth = 4 -- Number of spaces inserted when indenting
 
 -- smooth scroll
 opt.smoothscroll = true
