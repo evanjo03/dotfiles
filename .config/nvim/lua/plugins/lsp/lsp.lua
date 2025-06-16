@@ -163,6 +163,9 @@ return {
 			-- ts_ls = {
 			-- 	filetypes = { "typescript", "vue" },
 			-- },
+			-- vls = {
+			-- 	filetypes = { "vue" },
+			-- },
 
 			lua_ls = {
 				-- cmd = { ... },
