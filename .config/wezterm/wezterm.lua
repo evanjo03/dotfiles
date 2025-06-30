@@ -23,9 +23,9 @@ end
 -- config.color_scheme = "Everforest Dark (Gogh)"
 -- config.color_scheme = "nord"
 -- config.color_scheme = "Kanagawa (Gogh)"
--- config.color_scheme = "Catppuccin Frappé (Gogh)"
+config.color_scheme = "Catppuccin Frappé (Gogh)"
 -- config.color_scheme = "Catppuccin Macchiato (Gogh)"
-config.color_scheme = "Catppuccin Mocha (Gogh)"
+-- config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Night Owl (Gogh)"
 -- Change the font
 -- config.font = wezterm.font("MesloLGS Nerd Font")

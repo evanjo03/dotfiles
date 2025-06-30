@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "icon_theme": "Catppuccin Frappé",
+  "agent": {
+    "model_parameters": [],
+    "default_profile": "ask",
+    "version": "2"
+  },
   "features": {
     "edit_prediction_provider": "copilot"
   },
@@ -24,6 +30,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "VScode Dark Plus"
-  }
+    "dark": "Catppuccin Frappé"
+  },
+  "terminal": { "dock": "right" }
 }

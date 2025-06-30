@@ -16,4 +16,5 @@ return {
   keys = {
     { "-", "<CMD>Oil<CR>", desc = "Open parent directory" }, -- <‑ here
   },
+  enabled = true,
 }
