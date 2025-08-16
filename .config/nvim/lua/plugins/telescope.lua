@@ -1,50 +1,8 @@
 return {
-	"nvim-telescope/telescope.nvim",
-	branch = "0.1.x",
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-		{ -- If encountering errors, see telescope-fzf-native README for installation instructions
-			"nvim-telescope/telescope-fzf-native.nvim",
-
-			-- `build` is used to run some command when the plugin is installed/updated.
-			-- This is only run then, not every time Neovim starts up.
-			build = "make",
-
-			-- `cond` is a condition used to determine whether this plugin should be
-			-- installed and loaded.
-			cond = function()
-				return vim.fn.executable("make") == 1
-			end,
-		},
-		{ "nvim-telescope/telescope-ui-select.nvim" },
-
-		-- Useful for getting pretty icons, but requires a Nerd Font.
-		{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
-	},
-	config = function()
-		-- Configure Telescope to show hidden files
-		require("telescope").setup({
-			defaults = {
-				path_display = { "smart" },
-				file_ignore_patterns = { "%.git/" },
-			},
-			pickers = {
-				find_files = {
-					hidden = true,
-				},
-			},
-		})
-		pcall(require("telescope").load_extension, "fzf")
-		pcall(require("telescope").load_extension, "ui-select")
-
-		local builtin = require("telescope.builtin")
-		local wk = require("which-key")
-		wk.add({
-			{ "<leader>f", group = "Telescope" },
-			{ "<leader>ff", builtin.find_files, desc = "Find files" },
-			{ "<leader>fg", builtin.live_grep, desc = "Live grep" },
-			{ "<leader>fb", builtin.buffers, desc = "Buffers" },
-			{ "<leader>fh", builtin.help_tags, desc = "Help tags" },
-		})
-	end,
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+     dependencies = { 'nvim-lua/plenary.nvim' },
+     keys = {
+        { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },
+        { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Grep" },
+     },
 }

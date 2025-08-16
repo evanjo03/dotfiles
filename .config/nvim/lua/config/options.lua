@@ -20,8 +20,5 @@ opt.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB
 opt.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 opt.shiftwidth = 4 -- Number of spaces inserted when indenting
 
--- smooth scroll
-opt.smoothscroll = true
-
 -- Disable swap files
 opt.swapfile = false
