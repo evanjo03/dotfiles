@@ -146,7 +146,6 @@ return {
 
 					local param = unpack(result)
 					local id, command, payload = unpack(param)
-					print(command)
 					ts_client:exec_cmd({
 						title = "vue_request_forward", -- You can give title anything as it's used to represent a command in the UI, `:h Client:exec_cmd`
 						command = "typescript.tsserverRequest",
@@ -159,7 +158,6 @@ return {
 						-- TODO: handle error or response nil here, e.g. logging
 						-- NOTE: Do NOT return if there's an error or no response, just return nil back to the vue_ls to prevent memory leak
 						local response_data = { { id, response } }
-						print(response_data)
 
 						---@diagnostic disable-next-line: param-type-mismatch
 						client:notify("tsserver/response", response_data)

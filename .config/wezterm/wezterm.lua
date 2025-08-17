@@ -27,5 +27,14 @@ config.font_size = 16
 -- appearance
 config.hide_tab_bar_if_only_one_tab = true
 config.max_fps = 120
+config.window_decorations = "NONE"
+
+config.background = {
+	{
+		source = {
+			File = "/Users/john/Downloads/bg.jpg",
+		},
+	},
+}
 
 return config
