@@ -47,14 +47,12 @@ return {
 			local local_path = cwd .. "/node_modules/@vue/language-server"
 			local stat = uv.fs_stat(local_path)
 			if stat and stat.type == "directory" then
-				print("using local path")
 				return local_path
 			end
 			local mason_path = vim.fn.expand("$MASON/packages")
 				.. "/vue-language-server"
 				.. "/node_modules/@vue/language-server"
 			if uv.fs_stat(mason_path) then
-				print("using mason path")
 				return mason_path
 			end
 
