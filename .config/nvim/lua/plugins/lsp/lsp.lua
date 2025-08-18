@@ -31,9 +31,9 @@ return {
 			map("n", "<leader>fd", function()
 				vim.diagnostic.open_float(nil, { focus = false })
 			end, "Line Diagnostics")
-			map({ "n", "x" }, "<leader>ff", function()
-				vim.lsp.buf.format({ async = true })
-			end, "Format")
+			-- map({ "n", "x" }, "<leader>ff", function()
+			-- 	vim.lsp.buf.format({ async = true })
+			-- end, "Format")
 
 			if vim.lsp.inlay_hint then
 				pcall(vim.lsp.inlay_hint, bufnr, true)
@@ -195,5 +195,20 @@ return {
 
 		-- Enable the chosen pair
 		vim.lsp.enable({ "vtsls", "vue_ls" })
+
+		-- Jenkins :)
+		local lspconfig = require("lspconfig")
+		lspconfig.groovyls.setup({
+			capabilities = caps,
+			cmd = { "groovy-language-server" }, -- Mason adds to PATH
+			filetypes = { "groovy" },
+			root_dir = function(fname)
+				return lspconfig.util.root_pattern("Jenkinsfile", ".git", "jenkins")(fname)
+					or lspconfig.util.path.dirname(fname)
+			end,
+			settings = {
+				groovy = { classpath = {} }, -- add any shared lib jars/paths if needed
+			},
+		})
 	end,
 }

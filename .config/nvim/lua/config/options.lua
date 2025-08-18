@@ -22,3 +22,13 @@ opt.shiftwidth = 4 -- Number of spaces inserted when indenting
 
 -- Disable swap files
 opt.swapfile = false
+
+vim.filetype.add({
+	filename = {
+		["Jenkinsfile"] = "groovy",
+	},
+	pattern = {
+		["Jenkinsfile%..+"] = "groovy", -- Jenkinsfile.dev, Jenkinsfile.ci, etc.
+		[".+%.Jenkinsfile"] = "groovy", -- foo.Jenkinsfile
+	},
+})

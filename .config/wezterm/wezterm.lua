@@ -32,8 +32,15 @@ config.window_decorations = "RESIZE"
 config.background = {
 	{
 		source = {
-			File = "/Users/john/Downloads/bg.jpg",
+			File = "/Users/john.evans/Desktop/bg.jpg",
 		},
+	},
+	{
+		source = {
+			Color = "rgba(28, 33, 39, 0.40)",
+		},
+		height = "100%",
+		width = "100%",
 	},
 }
 
