@@ -3,7 +3,7 @@ return {
 	tag = "0.1.8",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	keys = {
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },
-		{ "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Grep" },
+		{ "<leader>sf", "<cmd>Telescope find_files<cr>", desc = "Search Files" },
+		{ "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Search Grep" },
 	},
 }

@@ -32,12 +32,12 @@ config.window_decorations = "RESIZE"
 config.background = {
 	{
 		source = {
-			File = "/Users/john.evans/Desktop/bg.jpg",
+			File = wezterm.config_dir .. "/bg.jpg",
 		},
 	},
 	{
 		source = {
-			Color = "rgba(28, 33, 39, 0.40)",
+			Color = "rgba(28, 33, 39, 0.70)",
 		},
 		height = "100%",
 		width = "100%",

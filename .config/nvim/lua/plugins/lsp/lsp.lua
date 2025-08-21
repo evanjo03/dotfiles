@@ -45,14 +45,6 @@ return {
 			severity_sort = true,
 			float = { border = "rounded", source = "if_many" },
 			underline = { severity = vim.diagnostic.severity.ERROR },
-			signs = vim.g.have_nerd_font and {
-				text = {
-					[vim.diagnostic.severity.ERROR] = "󰅚 ",
-					[vim.diagnostic.severity.WARN] = "󰀪 ",
-					[vim.diagnostic.severity.INFO] = "󰋽 ",
-					[vim.diagnostic.severity.HINT] = "󰌶 ",
-				},
-			} or {},
 			virtual_text = {
 				source = "if_many",
 				spacing = 2,
@@ -198,6 +190,13 @@ return {
 
 		-- Jenkins :)
 		local lspconfig = require("lspconfig")
+
+		lspconfig.gopls.setup({
+			capabilities = caps,
+			on_attach = on_attach,
+			filetypes = { "go" },
+		})
+
 		lspconfig.groovyls.setup({
 			capabilities = caps,
 			cmd = { "groovy-language-server" }, -- Mason adds to PATH

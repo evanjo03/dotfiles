@@ -3,8 +3,9 @@ return {
 	event = "VeryLazy",
 	opts = {
 		spec = {
-			{ "<leader>f", group = "Files" },
+			{ "<leader>s", group = "Search" },
 			{ "<leader>g", group = "Git" },
+			{ "<leader>a", group = "Avante" },
 		},
 	},
 	keys = {
