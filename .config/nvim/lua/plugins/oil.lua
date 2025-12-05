@@ -8,6 +8,7 @@ return {
       show_hidden = true,
     },
   },
+  enabled = false,
   -- Optional dependencies
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
   -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
@@ -16,5 +17,4 @@ return {
   keys = {
     { "-", "<CMD>Oil<CR>", desc = "Open parent directory" }, -- <‑ here
   },
-  enabled = true,
 }

@@ -18,21 +18,21 @@ end
 -- config.color_scheme = "One Dark (Gogh)"
 -- config.color_scheme = "Nightfly (Gogh)"
 -- config.color_scheme = "Tokyo Night (Gogh)"
-config.color_scheme = "Vs Code Dark+ (Gogh)"
+-- config.color_scheme = "Vs Code Dark+ (Gogh)"
 -- config.color_scheme = "nightfox"
 -- config.color_scheme = "Everforest Dark (Gogh)"
 -- config.color_scheme = "nord"
 -- config.color_scheme = "Kanagawa (Gogh)"
-config.color_scheme = "Catppuccin Frappé (Gogh)"
+-- config.color_scheme = "Catppuccin Frappé (Gogh)"
 -- config.color_scheme = "Catppuccin Macchiato (Gogh)"
 -- config.color_scheme = "Catppuccin Mocha (Gogh)"
--- config.color_scheme = "Night Owl (Gogh)"
+config.color_scheme = "Night Owl (Gogh)"
 -- Change the font
 -- config.font = wezterm.font("MesloLGS Nerd Font")
 -- config.font = wezterm.font("Hack Nerd Font")
 
-config.font = wezterm.font("JetBrainsMono Nerd Font")
--- config.font = wezterm.font("FiraCode Nerd Font")
+-- config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("FiraCode Nerd Font")
 -- config.font = wezterm.font("FiraMono Nerd Font")
 --
 config.font_size = 16
@@ -61,7 +61,7 @@ config.max_fps = 120
 -- 	scrollbar_thumb = "white",
 -- }
 -- config.background = {
--- 	-- This is the deepest/back-most layer. It will be rendered first
+-- 	-- 	-- This is the deepest/back-most layer. It will be rendered first
 -- 	{
 -- 		source = {
 -- 			File = "/Users/john.evans/Pictures/bg/Fxjleil.png",
@@ -78,6 +78,6 @@ config.max_fps = 120
 -- 		attachment = { Parallax = 0.1 },
 -- 	},
 -- }
-
+--
 -- and finally, return the configuration to wezterm
 return config
