@@ -7,8 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "ui_font_family": "JetBrainsMono Nerd Font",
   "icon_theme": "Catppuccin Frappé",
   "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5"
+    },
     "model_parameters": [],
     "default_profile": "ask",
     "version": "2"
